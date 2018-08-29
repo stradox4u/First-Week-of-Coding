@@ -1,0 +1,9 @@
+table, th, td {border:2px solid cornflowerblue;}
+
+table {border-collapse:collapse;}
+
+th, td {padding:25px; vertical-align:center;}
+
+tbody tr:nth-child(odd) {background-color: #ccff99;}
+
+thead, tfoot {background-color: aquamarine;}
