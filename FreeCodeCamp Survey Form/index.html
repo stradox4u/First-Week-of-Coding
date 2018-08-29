@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Customer Service Survey Form</h1>
+    <!--Personal Information-->
+    <p id="description">Let Us Know How You Found Our Service</p>
+    <form action="" id="survey-form">
+       <div>
+           <label id="name-label" for="name">*Name</label>
+            <input placeholder="Name" required type="text" id="name" name="user_name" minlength="3">
+       </div> 
+       <div>
+            <label id="email-label" for="email">*Email</label>
+             <input placeholder="Email" required type="email" id="email" name="user_email">
+        </div> 
+        <div>
+                <label id="number-label" for="number">*Account Number</label>
+                 <input placeholder="Account Number" type="number" id="number" name="account_number" value="account-number" min="0000000001" max="999999999">
+            </div>
+        <div>
+            <label class= "group-label">*Type of Account</label>
+            <select name="dropdown" id="dropdown">
+                <option value="current" name="current-account" >Current Account</option>
+                <option value="savings" selected name="savings-account">Savings Account</option>
+                <option value="domiciliary" name="domiciliary-account">Domiciliary Account</option>
+            </select>
+        </div> 
+        <!--Follow Up Preference-->
+       <section id="follow-up-preference">
+           <label>How Would You Like to Be Contacted for a Follow-up?</label>
+            <div class="radio-button">
+            <input type="radio" name="contact" id="email" checked value="email">
+            <label for="email">Email</label>
+            </div>
+            <div class="radio-button">
+                    <input type="radio" name="contact" id="phone" value="phone">
+                    <label for="phone">Phone</label>
+            </div>
+            <div class="radio-button">
+                    <input type="radio" name="contact" id="visit" value="visit">
+                    <label for="visit">Visit</label>
+            </div>
+            <div class="radio-button">
+                    <input type="radio" name="contact" id="none" value="none" >
+                    <label for="none">None</label>
+            </div>
+        </section>
+        <!--Service Received-->
+        <section id="service-received" >
+            <label for="service-received">How did we serve you today?</label>
+            <div class="service-received">
+                <input type="checkbox" id="cash-or-cheque-deposit" checked value="cash-or-cheque" name="cash-or-cheque-deposit">
+                <label for="cash-or-cheque" id="cash-or-cheque-deposit">Cash or Cheque Deposit</label>
+            </div>
+            <div class="service-received">
+                <input type="checkbox" id="withdrawal" value="withdrawal" name="withdrawal" >
+                <label for="withdrawal" id="withdrawal">Withdrawal</label>
+            </div>
+            <div class="service-received">
+                <input type="checkbox" id="transfer" value="funds-transfer" name="funds-transfer" >
+                <label for="transfer" id="transfer">Funds Transfer</label>
+            </div>
+            <div class="service-received">
+                    <input type="checkbox" id="other" value="other" name="other" >
+                    <label for="other" id="other">Other</label>
+                </div>
+        </section>
+        <!--Star Rating-->
+        <section id="rating" class="stars">
+            <label for="rating">How would you rate our service today?</label>
+                <div class="rating">
+                    <input type="radio" id="1star" name="star-rating" checked value="1 star">
+                    <label for="1star">1 Star (Not Satisfied)</label>
+                </div>
+                <div class="rating">
+                    <input type="radio" id="2star" name="star-rating" value="2 stars">
+                    <label for="2star">2 Stars (Fairly Satisfied)</label>
+                </div>
+                <div class="rating">
+                    <input type="radio" id="3star" name="star-rating" value="3 stars" >
+                    <label for="3star">3 Stars (Indifferent)</label>
+                </div>
+                <div class="rating">
+                    <input type="radio" id="4star" name="star-rating" value="4 stars" >
+                    <label for="4star">4 Stars (Very Satisfied)</label>
+                </div>
+                <div class="rating">
+                    <input type="radio" id="5star" name="star-rating" value="5 stars">
+                    <label for="5star">5 Stars (Expectations Exceeded)</label>
+                </div>
+        </section>
+        <section id="further-comments" class="comments">
+            <textarea name="further-comments" id="suggestions" cols="30" rows="10">Any suggestions as to how we might improve our services next time?</textarea>
+
+        </section>
+        <button id="submit">Submit</button>
+
+    </form>
+</body>
+</html>

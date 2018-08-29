@@ -1,0 +1,45 @@
+/* Variables */
+:root {
+    --background: #c6c4ff;
+    --primary: #000000;
+    --light: #b16340;
+    --dark: #303a05;
+    --shadow: 0 2px 5px rgba(104, 104, 104, 0.8);
+}
+html {
+    margin: 20px;
+    color: primary;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background: var(--background);
+    margin: 20px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+    text-shadow: var(--shadow);
+}
+h1 {
+    background: var(--light);
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px hidden;
+    border-radius: 15px;
+    margin-bottom: 0px;
+}
+#description {
+    margin-top: 0px;
+}
+#suggestions {
+    width: 100%;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#submit {
+    font-size: 2rem;
+    background: var(--light);
+    box-shadow: var(--shadow);
+ }
