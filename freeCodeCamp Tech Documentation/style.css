@@ -1,0 +1,68 @@
+/* CSS Variables */
+:root {
+    --primary: #e6e4e4;
+    --dark: #444;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+/* General Rules */
+html {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: rgb(230, 228, 228);
+    margin: 30px 30px;
+    line-height: 1.5rem;
+}
+/* Navigation Bar */
+#navbar > a {
+    text-decoration: none;
+    color: var(--primary);
+    background: var(--dark);
+    padding: 0.4rem;
+    box-shadow: var(--shadow);
+  }
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1 1 100px;
+}
+
+#navbar > a:hover {
+    text-decoration: none;
+    color: var(--dark);
+    background: rgb(196, 7, 7);
+    padding: 0.4rem;
+    box-shadow: var(--shadow);
+  }
+  /* Media Query */
+  @media (min-width: 900px) {
+      #navbar > a {
+          text-decoration: none;
+          color: var(--primary);
+          padding: 0.6rem;
+      }
+      #navbar {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: stretch;
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 20vw;
+          height: 100vh;
+      }
+      #main-doc {
+          width: 70vw;
+         position: absolute;
+         right: 0;
+         top: 0; 
+      }
+  }
